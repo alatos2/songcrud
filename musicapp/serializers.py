@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Song, Lyric, Artiste
 
 class SongSerializer(serializers.ModelSerializer):
+    artiste = serializers.StringRelatedField() # this shows any field of foreign key instead of id
     class Meta:
         model = Song
         fields = ['title', 'date_released', 'likes', 'artiste']

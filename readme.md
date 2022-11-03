@@ -42,6 +42,7 @@ Songcrud app contains a simple REST API to list all songs in the database and al
 * [Django](https://www.djangoproject.com/)
 * [DjangoRestFramework](https://www.django-rest-framework.org/#requirements)
 * [Thunder Client](https://www.thunderclient.com/)
+* [Virtual Environment](https://docs.python.org/3/library/venv.html)
 
 ## Acknowledgements
 

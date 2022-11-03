@@ -32,11 +32,10 @@ def SongDetailsView(request, pk):
         return Response(serializer.data)
     elif request.method == 'PUT':
         serializer = SongSerializer(post, data=request.data)
-
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=400)
     elif request.method == 'DELETE':
         post.delete()
-        return Response(status=204)
+        return Response(status=204, data={'msg':'Song deleted!!!'})
